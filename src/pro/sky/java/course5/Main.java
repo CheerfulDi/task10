@@ -23,7 +23,6 @@ public class Main {
         System.out.println(Arrays.toString(result));
 
         //Второе решение
-
         List<String> list = Arrays.stream(strings).distinct().toList();
         System.out.println(list);
 
