@@ -2,8 +2,8 @@ package pro.sky.java.course5;
 
 import java.util.Arrays;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -22,8 +22,8 @@ public class Main {
         System.out.println(Arrays.toString(result));
 
         //Второе решение
-        List<String> list = Arrays.stream(strings).distinct().toList();
-        System.out.println(list);
+        String result2 = Arrays.stream(strings).distinct().collect(Collectors.joining(" "));
+        System.out.println(result2);
 
 
 
